@@ -22,3 +22,7 @@ let operator = add;
 
 let operate = (a,b,c) => c(a,b);
 
+
+const test = () => {
+    document.getElementById('display').innerHTML = '1';
+};
