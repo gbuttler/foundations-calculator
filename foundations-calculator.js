@@ -24,5 +24,5 @@ let operate = (a,b,c) => c(a,b);
 
 
 const test = () => {
-    document.getElementById('display').innerHTML = '1';
+    document.getElementById('display').innerHTML += '1'; //use += to stop numbers overwriting themselves (I think)
 };
