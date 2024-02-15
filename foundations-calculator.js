@@ -31,60 +31,76 @@ let divide = (a,b) => a/b;
 
 let operate = (a,b,c) => c(a,b);
 
+// if($('span').text().length == 0){
+//     console.log('No Text');
+//   }
+//   else{
+//     console.log('Has Text');
+//   }
+
 
 const testOne = () => {
-    document.getElementById('display').innerHTML += '1'; //use += to stop numbers overwriting themselves (I think)
+        if (document.getElementById('operator').length == 0 && document.getElementById('a').length == 0) {
+            document.getElementById('a').innerHTML += '1';
+        }     
+        else if (document.getElementById('operator').length != 0 && document.getElementById('a').length != 0) {
+            document.getElementById('b').innerHTML += '1';
+        }
+        else {
+            alert('ERROR!')
+        }
 };
 
 const testTwo = () => {
-    document.getElementById('display').innerHTML += '2'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('a').innerHTML += '2'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testThree = () => {
-    document.getElementById('display').innerHTML += '3'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('a').innerHTML += '3'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testFour = () => {
-    document.getElementById('display').innerHTML += '4'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('a').innerHTML += '4'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testFive = () => {
-    document.getElementById('display').innerHTML += '5'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('a').innerHTML += '5'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testSix = () => {
-    document.getElementById('display').innerHTML += '6'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('a').innerHTML += '6'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testSeven = () => {
-    document.getElementById('display').innerHTML += '7'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('a').innerHTML += '7'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testEight = () => {
-    document.getElementById('display').innerHTML += '8'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('a').innerHTML += '8'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testNine = () => {
-    document.getElementById('display').innerHTML += '9'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('a').innerHTML += '9'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testZero = () => {
-    document.getElementById('display').innerHTML += '0'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('a').innerHTML += '0'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testAdd = () => {
-    document.getElementById('display').innerHTML += '+'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('operator').innerHTML += '+'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testSubtract = () => {
-    document.getElementById('display').innerHTML += '-'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('operator').innerHTML += '-'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testMultiply = () => {
-    document.getElementById('display').innerHTML += '*'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('operator').innerHTML += '*'; //use += to stop numbers overwriting themselves (I think)
 }
 
 const testDivide = () => {
-    document.getElementById('display').innerHTML += '/'; //use += to stop numbers overwriting themselves (I think)
+    document.getElementById('operator').innerHTML += '/'; //use += to stop numbers overwriting themselves (I think)
 }
+
 
