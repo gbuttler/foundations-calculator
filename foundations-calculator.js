@@ -6,8 +6,10 @@ let operator = document.getElementById('operator')
 
 
 const result = () => {
-    if (('span').attr('operator') == '+') 
+    if (document.getElementById('operator').innerHTML == '+') 
         document.getElementById('result').innerHTML= (firstNumber,secondNumber) => firstNumber+secondNumber;
+    console.log(firstNumber)
+    console.log(secondNumber)
 };
 
 {/* <div id="myID"></div>
@@ -40,10 +42,16 @@ let operate = (a,b,c) => c(a,b);
 
 
 const testOne = () => {
-        if (document.getElementById('operator').length == 0 && document.getElementById('a').length == 0) {
+
+        const operator_length = document.getElementById('operator').innerHTML.length || 0;
+        const a_length = document.getElementById('a').innerHTML.length || 0;
+
+        console.log(operator_length, a_length)
+
+        if (operator_length == 0) {
             document.getElementById('a').innerHTML += '1';
         }     
-        else if (document.getElementById('operator').length != 0 && document.getElementById('a').length != 0) {
+        else if (operator_length != 0 && a_length != 0) {
             document.getElementById('b').innerHTML += '1';
         }
         else {
@@ -52,39 +60,156 @@ const testOne = () => {
 };
 
 const testTwo = () => {
-    document.getElementById('a').innerHTML += '2'; //use += to stop numbers overwriting themselves (I think)
+        const operator_length = document.getElementById('operator').innerHTML.length || 0;
+        const a_length = document.getElementById('a').innerHTML.length || 0;
+
+        console.log(operator_length, a_length)
+
+        if (operator_length == 0) {
+            document.getElementById('a').innerHTML += '2';
+        }     
+        else if (operator_length != 0 && a_length != 0) {
+            document.getElementById('b').innerHTML += '2';
+        }
+        else {
+            alert('ERROR!')
+        }
 }
 
 const testThree = () => {
-    document.getElementById('a').innerHTML += '3'; //use += to stop numbers overwriting themselves (I think)
+    const operator_length = document.getElementById('operator').innerHTML.length || 0;
+        const a_length = document.getElementById('a').innerHTML.length || 0;
+
+        console.log(operator_length, a_length)
+
+        if (operator_length == 0) {
+            document.getElementById('a').innerHTML += '3';
+        }     
+        else if (operator_length != 0 && a_length != 0) {
+            document.getElementById('b').innerHTML += '3';
+        }
+        else {
+            alert('ERROR!')
+        }
 }
 
 const testFour = () => {
-    document.getElementById('a').innerHTML += '4'; //use += to stop numbers overwriting themselves (I think)
+    const operator_length = document.getElementById('operator').innerHTML.length || 0;
+        const a_length = document.getElementById('a').innerHTML.length || 0;
+
+        console.log(operator_length, a_length)
+
+        if (operator_length == 0) {
+            document.getElementById('a').innerHTML += '4';
+        }     
+        else if (operator_length != 0 && a_length != 0) {
+            document.getElementById('b').innerHTML += '4';
+        }
+        else {
+            alert('ERROR!')
+        }
 }
 
 const testFive = () => {
-    document.getElementById('a').innerHTML += '5'; //use += to stop numbers overwriting themselves (I think)
+    const operator_length = document.getElementById('operator').innerHTML.length || 0;
+        const a_length = document.getElementById('a').innerHTML.length || 0;
+
+        console.log(operator_length, a_length)
+
+        if (operator_length == 0) {
+            document.getElementById('a').innerHTML += '5';
+        }     
+        else if (operator_length != 0 && a_length != 0) {
+            document.getElementById('b').innerHTML += '5';
+        }
+        else {
+            alert('ERROR!')
+        }
 }
 
 const testSix = () => {
-    document.getElementById('a').innerHTML += '6'; //use += to stop numbers overwriting themselves (I think)
+    const operator_length = document.getElementById('operator').innerHTML.length || 0;
+        const a_length = document.getElementById('a').innerHTML.length || 0;
+
+        console.log(operator_length, a_length)
+
+        if (operator_length == 0) {
+            document.getElementById('a').innerHTML += '6';
+        }     
+        else if (operator_length != 0 && a_length != 0) {
+            document.getElementById('b').innerHTML += '6';
+        }
+        else {
+            alert('ERROR!')
+        }
 }
 
 const testSeven = () => {
-    document.getElementById('a').innerHTML += '7'; //use += to stop numbers overwriting themselves (I think)
+        const operator_length = document.getElementById('operator').innerHTML.length || 0;
+        const a_length = document.getElementById('a').innerHTML.length || 0;
+
+        console.log(operator_length, a_length)
+
+        if (operator_length == 0) {
+            document.getElementById('a').innerHTML += '7';
+        }     
+        else if (operator_length != 0 && a_length != 0) {
+            document.getElementById('b').innerHTML += '7';
+        }
+        else {
+            alert('ERROR!')
+        }
 }
 
 const testEight = () => {
-    document.getElementById('a').innerHTML += '8'; //use += to stop numbers overwriting themselves (I think)
+    const operator_length = document.getElementById('operator').innerHTML.length || 0;
+    const a_length = document.getElementById('a').innerHTML.length || 0;
+
+    console.log(operator_length, a_length)
+
+    if (operator_length == 0) {
+        document.getElementById('a').innerHTML += '8';
+    }     
+    else if (operator_length != 0 && a_length != 0) {
+        document.getElementById('b').innerHTML += '8';
+    }
+    else {
+        alert('ERROR!')
+    }
 }
 
 const testNine = () => {
-    document.getElementById('a').innerHTML += '9'; //use += to stop numbers overwriting themselves (I think)
+    const operator_length = document.getElementById('operator').innerHTML.length || 0;
+    const a_length = document.getElementById('a').innerHTML.length || 0;
+
+    console.log(operator_length, a_length)
+
+    if (operator_length == 0) {
+        document.getElementById('a').innerHTML += '9';
+    }     
+    else if (operator_length != 0 && a_length != 0) {
+        document.getElementById('b').innerHTML += '9';
+    }
+    else {
+        alert('ERROR!')
+    }
 }
 
 const testZero = () => {
-    document.getElementById('a').innerHTML += '0'; //use += to stop numbers overwriting themselves (I think)
+    const operator_length = document.getElementById('operator').innerHTML.length || 0;
+    const a_length = document.getElementById('a').innerHTML.length || 0;
+
+    console.log(operator_length, a_length)
+
+    if (operator_length == 0) {
+        document.getElementById('a').innerHTML += '0';
+    }     
+    else if (operator_length != 0 && a_length != 0) {
+        document.getElementById('b').innerHTML += '0';
+    }
+    else {
+        alert('ERROR!')
+    }
 }
 
 const testAdd = () => {
@@ -102,5 +227,3 @@ const testMultiply = () => {
 const testDivide = () => {
     document.getElementById('operator').innerHTML += '/'; //use += to stop numbers overwriting themselves (I think)
 }
-
-
