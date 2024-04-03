@@ -6,8 +6,10 @@
 
 3. I figured out I needed to delete the a==0 in the if statement first line. 
 
-NEXT STEPs
-- figure out how to get the calculator to actually work
-- only allow one operator to be used at a time
-- get the equals button to work
-- get a second operator (if pressed after 'b') to act as an equals
+4. I have managed to get all of the sums to work. But you do have to type in each individual sum
+
+NEXT STEPS
+- Make the 'Clear' button work
+- Allow you to use the result number as the number for your next sum.
+- Make the calculator look nice.
+

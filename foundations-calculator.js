@@ -6,10 +6,21 @@ let operator = document.getElementById('operator')
 
 
 const result = () => {
-    if (document.getElementById('operator').innerHTML == '+') 
-        document.getElementById('result').innerHTML= (firstNumber,secondNumber) => firstNumber+secondNumber;
-    console.log(firstNumber)
-    console.log(secondNumber)
+    if (document.getElementById('operator').innerHTML == '+') {
+        document.getElementById('result').innerHTML = firstNumber+secondNumber;
+    }
+    else if (document.getElementById('operator').innerHTML == '-') {
+        document.getElementById('result').innerHTML = firstNumber-secondNumber;
+    }
+    else if (document.getElementById('operator').innerHTML == '*') {
+        document.getElementById('result').innerHTML = firstNumber*secondNumber;
+    }
+    else if (document.getElementById('operator').innerHTML == '/') {
+        document.getElementById('result').innerHTML = firstNumber/secondNumber;
+    }
+    else {
+        alert('ERROR!');
+    }
 };
 
 {/* <div id="myID"></div>
@@ -33,12 +44,6 @@ let divide = (a,b) => a/b;
 
 let operate = (a,b,c) => c(a,b);
 
-// if($('span').text().length == 0){
-//     console.log('No Text');
-//   }
-//   else{
-//     console.log('Has Text');
-//   }
 
 
 const testOne = () => {
@@ -50,9 +55,11 @@ const testOne = () => {
 
         if (operator_length == 0) {
             document.getElementById('a').innerHTML += '1';
+            firstNumber = Number(document.getElementById('a').innerHTML); //Used the Number function to convert 'a' into a number
         }     
         else if (operator_length != 0 && a_length != 0) {
             document.getElementById('b').innerHTML += '1';
+            secondNumber = Number( document.getElementById('b').innerHTML);
         }
         else {
             alert('ERROR!')
@@ -67,9 +74,11 @@ const testTwo = () => {
 
         if (operator_length == 0) {
             document.getElementById('a').innerHTML += '2';
+            firstNumber = Number(document.getElementById('a').innerHTML);
         }     
         else if (operator_length != 0 && a_length != 0) {
             document.getElementById('b').innerHTML += '2';
+            secondNumber = Number( document.getElementById('b').innerHTML);
         }
         else {
             alert('ERROR!')
@@ -84,9 +93,11 @@ const testThree = () => {
 
         if (operator_length == 0) {
             document.getElementById('a').innerHTML += '3';
+            firstNumber = Number(document.getElementById('a').innerHTML);
         }     
         else if (operator_length != 0 && a_length != 0) {
             document.getElementById('b').innerHTML += '3';
+            secondNumber = Number( document.getElementById('b').innerHTML);
         }
         else {
             alert('ERROR!')
@@ -101,9 +112,11 @@ const testFour = () => {
 
         if (operator_length == 0) {
             document.getElementById('a').innerHTML += '4';
+            firstNumber = Number(document.getElementById('a').innerHTML);
         }     
         else if (operator_length != 0 && a_length != 0) {
             document.getElementById('b').innerHTML += '4';
+            secondNumber = Number( document.getElementById('b').innerHTML);
         }
         else {
             alert('ERROR!')
@@ -118,9 +131,11 @@ const testFive = () => {
 
         if (operator_length == 0) {
             document.getElementById('a').innerHTML += '5';
+            firstNumber = Number(document.getElementById('a').innerHTML);
         }     
         else if (operator_length != 0 && a_length != 0) {
             document.getElementById('b').innerHTML += '5';
+            secondNumber = Number( document.getElementById('b').innerHTML);
         }
         else {
             alert('ERROR!')
@@ -135,9 +150,11 @@ const testSix = () => {
 
         if (operator_length == 0) {
             document.getElementById('a').innerHTML += '6';
+            firstNumber = Number(document.getElementById('a').innerHTML);
         }     
         else if (operator_length != 0 && a_length != 0) {
             document.getElementById('b').innerHTML += '6';
+            secondNumber = Number( document.getElementById('b').innerHTML);
         }
         else {
             alert('ERROR!')
@@ -152,9 +169,11 @@ const testSeven = () => {
 
         if (operator_length == 0) {
             document.getElementById('a').innerHTML += '7';
+            firstNumber = Number(document.getElementById('a').innerHTML);
         }     
         else if (operator_length != 0 && a_length != 0) {
             document.getElementById('b').innerHTML += '7';
+            secondNumber = Number( document.getElementById('b').innerHTML);
         }
         else {
             alert('ERROR!')
@@ -169,9 +188,11 @@ const testEight = () => {
 
     if (operator_length == 0) {
         document.getElementById('a').innerHTML += '8';
+        firstNumber = Number(document.getElementById('a').innerHTML);
     }     
     else if (operator_length != 0 && a_length != 0) {
         document.getElementById('b').innerHTML += '8';
+        secondNumber = Number( document.getElementById('b').innerHTML);
     }
     else {
         alert('ERROR!')
@@ -186,9 +207,11 @@ const testNine = () => {
 
     if (operator_length == 0) {
         document.getElementById('a').innerHTML += '9';
+        firstNumber = Number(document.getElementById('a').innerHTML);
     }     
     else if (operator_length != 0 && a_length != 0) {
         document.getElementById('b').innerHTML += '9';
+        secondNumber = Number( document.getElementById('b').innerHTML);
     }
     else {
         alert('ERROR!')
@@ -203,9 +226,11 @@ const testZero = () => {
 
     if (operator_length == 0) {
         document.getElementById('a').innerHTML += '0';
+        firstNumber = Number(document.getElementById('a').innerHTML);
     }     
     else if (operator_length != 0 && a_length != 0) {
         document.getElementById('b').innerHTML += '0';
+        secondNumber = Number( document.getElementById('b').innerHTML);
     }
     else {
         alert('ERROR!')
@@ -225,5 +250,5 @@ const testMultiply = () => {
 }
 
 const testDivide = () => {
-    document.getElementById('operator').innerHTML += '/'; //use += to stop numbers overwriting themselves (I think)
+  document.getElementById('operator').innerHTML += '/'; //use += to stop numbers overwriting themselves (I think)
 }
