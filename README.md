@@ -8,6 +8,8 @@
 
 4. I have managed to get all of the sums to work. But you do have to type in each individual sum
 
+5. I have made the 'clear' button work by simply reloading the page.
+
 NEXT STEPS
 - Make the 'Clear' button work
 - Allow you to use the result number as the number for your next sum.
