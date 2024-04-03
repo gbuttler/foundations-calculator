@@ -23,27 +23,13 @@ const result = () => {
     }
 };
 
-{/* <div id="myID"></div>
-
-if($("div").attr("id") == "myID")
-{
-    //do stuff
-} */}
-
-let add = (a,b) => a+b;
-
-let subtract = (a,b) => a-b;
-
-let multiply = (a,b) => a*b;
-
-let divide = (a,b) => a/b;
-
-// let operator = add; 
-
-
-
-let operate = (a,b,c) => c(a,b);
-
+// const nextSum = () => {
+//     if (result_length != 0) {
+//         result = firstNumber}
+//     else {
+//         firstNumber = firstNumber
+//     }
+//     };
 
 
 const testOne = () => {
