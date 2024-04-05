@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type = "text/javascript" src="foundations-calculator.js"></script>
+    <link rel = 'stylesheet' href = 'stylesheeet.css'>
     <title>Document</title>
 </head>
 <body>
-    
-    <button onclick="testOne()">1</button>
-    <button onclick="testTwo()">2</button>
-    <button onclick="testThree()">3</button>
-    <button onclick="testFour()">4</button>
-    <button onclick="testFive()">5</button>
-    <button onclick="testSix()">6</button>
-    <button onclick="testSeven()">7</button>
-    <button onclick="testEight()">8</button>
-    <button onclick="testNine()">9</button>
-    <button onclick="testZero()">0</button>
+    <p id = 'title'>CALCULATOR</p>
+<div class="mainbuttons">
+    <button id = 'one' onclick="testOne()">1</button>
+    <button id = 'two' onclick="testTwo()">2</button>
+    <button id = 'three' onclick="testThree()">3</button>
+    <button id = 'four' onclick="testFour()">4</button>
+    <button id = 'five' onclick="testFive()">5</button>
+    <button id = 'six' onclick="testSix()">6</button>
+    <button id = 'seven' onclick="testSeven()">7</button>
+    <button id = 'eight' onclick="testEight()">8</button>
+    <button id = 'nine' onclick="testNine()">9</button>
+    <button id = 'zero' onclick="testZero()">0</button>
     <button id='add' onclick="testAdd()">+</button>
     <button id='subtract' onclick="testSubtract()">-</button>
     <button id='multiply' onclick="testMultiply()">*</button>
     <button id='divide' onclick="testDivide()">/</button>
-    <button onclick="result()">=</button>
-    <button onclick = 'window.location.reload()'>Clear</button>
-    <p id="display"><span id="a"></span><span id="operator"></span><span id="b"></span></p>
-    <p id="result"></p>
+    <button id='equals' onclick="result()">=</button>
+</div>  
+<p id="display"><span id="a"></span><span id="operator"></span><span id="b"></span></p>
+<p id="result"></p>    
+<div class="answers">
+    <button id='clear' onclick = 'window.location.reload()'>Clear</button>
+    <button id='contmaths' onclick = 'continueMaths()'>Continue Maths!</button>
+</div>    
+    
 
 </body>
 </html>

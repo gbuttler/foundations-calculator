@@ -1,0 +1,62 @@
+*{color: #181b70;}
+
+*{font-family: 'Courier New', Courier, monospace}
+
+* {background-color: #e6e6f0;}
+
+* {text-align: center;}
+
+button{background-color: #d3d4f2;}
+
+.mainbuttons{
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5,50px);
+    grid-template-rows: repeat(5, 50px);
+}
+
+#title{font-size: 30px;}
+
+#one{background-color:  #ed514c;}
+
+#two{background-color: #eda74c;}
+
+#three{background-color: #2a86e8;}
+
+#four{background-color: #228c58;}
+
+#five{background-color: #de28de;}
+
+#six{background-color: #d67d7a;}
+
+#seven{background-color: #e3b374;}
+
+#eight{background-color: #88b8eb}
+
+#nine{background-color: #5cab84;}
+
+#zero{background-color: #eda6e2;}
+
+#add{background-color: #dbb5b4;}
+
+#subtract{background-color: #edd7bb;}
+
+#multiply{background-color: #aec9e6;}
+
+#divide {background-color: #aecfbe;}
+
+#equals{background-color: #f5d5f5;}
+
+#display{}
+#result{}
+
+.answers{display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(1, 100px);}
+
+#clear{background-color: #c191e3;}
+
+#contmaths{background-color: #c191e3;}

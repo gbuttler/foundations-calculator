@@ -23,13 +23,18 @@ const result = () => {
     }
 };
 
-// const nextSum = () => {
-//     if (result_length != 0) {
-//         result = firstNumber}
-//     else {
-//         firstNumber = firstNumber
-//     }
-//     };
+var continueMaths = () => {
+    if (document.getElementById('result').innerHTML.length == 0 ) {
+        alert('You have no maths to continue!');
+    }
+    else {
+        let tmp = document.getElementById('result').innerHTML
+        document.getElementById('a').innerHTML = tmp; // this doesn't seem to work, returns undefined. Not sure how to continue.
+        document.getElementById('b').innerHTML = ''
+        document.getElementById('operator').innerHTML = ''
+        console.log('continuemaths', tmp);
+    }
+}
 
 
 const testOne = () => {
