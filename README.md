@@ -10,6 +10,10 @@
 
 5. I have made the 'clear' button work by simply reloading the page.
 
+6. I have made the calculator look nicer using CSS.
+
+7. There is still an issue where if you try to ude a number with a decimal point it gives an incorrect result, not sure why. I may come back to this later when I have renewed energy for the project. 
+
 NEXT STEPS
 - If you press an operator after your first and second numbers have been entered, it automatically uses the result number as 'firstNumber'
 - Allow you to use the result number as the number for your next sum, so you can do a long string of calculations. (simply by keying in another operator)
