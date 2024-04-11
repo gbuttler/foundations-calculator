@@ -1,27 +1,34 @@
+
+
+
+
 let firstNumber = document.getElementById('a');
 
 let secondNumber = document.getElementById('b');
 
-let operator = document.getElementById('operator')
+let operator = document.getElementById('operator');
 
 
-const result = () => {
+
+
+function result() {
     if (document.getElementById('operator').innerHTML == '+') {
-        document.getElementById('result').innerHTML = firstNumber+secondNumber;
+        console.log(firstNumber, (typeof firstNumber));
+        document.getElementById('result').innerHTML = firstNumber + secondNumber;
     }
     else if (document.getElementById('operator').innerHTML == '-') {
-        document.getElementById('result').innerHTML = firstNumber-secondNumber;
+        document.getElementById('result').innerHTML = firstNumber - secondNumber;
     }
     else if (document.getElementById('operator').innerHTML == '*') {
-        document.getElementById('result').innerHTML = firstNumber*secondNumber;
+        document.getElementById('result').innerHTML = firstNumber * secondNumber;
     }
     else if (document.getElementById('operator').innerHTML == '/') {
-        document.getElementById('result').innerHTML = firstNumber/secondNumber;
+        document.getElementById('result').innerHTML = firstNumber / secondNumber;
     }
     else {
         alert('ERROR!');
     }
-};
+}
 
 var continueMaths = () => {
     if (document.getElementById('result').innerHTML.length == 0 ) {
@@ -29,25 +36,30 @@ var continueMaths = () => {
     }
     else {
         let tmp = document.getElementById('result').innerHTML
-        document.getElementById('a').innerHTML = tmp; // this doesn't seem to work, returns undefined. Not sure how to continue.
+        document.getElementById('a').innerHTML = document.getElementById('result').innerHTML
         document.getElementById('b').innerHTML = ''
         document.getElementById('operator').innerHTML = ''
-        console.log('continuemaths', tmp);
+        firstNumber = Number(tmp);
+        console.log('firstnumber is', firstNumber, 'tmp is', tmp, (typeof tmp));
+       
     }
 }
+
 
 
 const testOne = () => {
 
         const operator_length = document.getElementById('operator').innerHTML.length || 0;
         const a_length = document.getElementById('a').innerHTML.length || 0;
+        
 
         console.log(operator_length, a_length)
 
         if (operator_length == 0) {
             document.getElementById('a').innerHTML += '1';
             firstNumber = Number(document.getElementById('a').innerHTML); //Used the Number function to convert 'a' into a number
-        }     
+            console.log('first number is', firstNumber, 'operator length is', operator_length);
+        }  
         else if (operator_length != 0 && a_length != 0) {
             document.getElementById('b').innerHTML += '1';
             secondNumber = Number( document.getElementById('b').innerHTML);
