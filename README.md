@@ -16,6 +16,9 @@
 
 8. I have realised the issue is with the 'Continue Maths' button. It wasn't updating the first number. I think this could be that all of my new variables were declared inside the 'continuemaths' function, and so therefore are not global. Am attempting to fix now using console.log to try and figure out where the issue is. 
 
+9. fixed, with a little assistance. I could see if I can round decimals, but think I'll leave it there! Hooray!
+
+
 NEXT STEPS
 - If you press an operator after your first and second numbers have been entered, it automatically uses the result number as 'firstNumber'
 - Allow you to use the result number as the number for your next sum, so you can do a long string of calculations. (simply by keying in another operator)
